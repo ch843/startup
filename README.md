@@ -1,2 +1,2 @@
 # startup
-GitHub Assignment CS260
+Hello World!
