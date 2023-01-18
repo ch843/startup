@@ -1,4 +1,2 @@
 # startup
-Hello World!
-This is an assignment for my CS260 class
-Goodnight world
+In this assignment, I learned how to use the Git functions in VS code. I had never done that before. I also learned how to use GitHub better and more effectively.
