@@ -1,2 +1,7 @@
 # startup
-In this assignment, I learned how to use the Git functions in VS code. I had never done that before. I also learned how to use GitHub better and more effectively.
+Provo is full of individuals looking for fun dates. They want food, but not too expensive. They want a sit down restaurant while still having a casual, fun atmosphere to talk and have fun. Tacos check these boxes. They are simple, versatile, and loved by many. But how do you know which taco restaurant to go to? There are so many options. Let's Talk Tacos is here to help. This idea sparked from a simple date idea: try one taco from five different places and rank them. This app picks a random taco place within a specified mile radius to go and try. The app also displays additional information, such as address, photos, and menu. You can then add the place to your list, and generate another to try as well! After eating at teh restuarant, the app prompts you to rank it based on taste, atmosphere, and overall satisfaction. An easy, effective date idea for taco enthusiasts, friends, and couples!
+
+Key features: taco place generator from (1) location in certain mile radius, (2) certain day, and (3) time [to ensure the restaurant is open], "My List" with taco shops generated previously, Rating feature, Global Rankings for zip code location
+
+![LetsTalkTacos](https://user-images.githubusercontent.com/120153538/214683601-231f275c-fc0d-4737-b04b-40cf91a3df9b.jpg)
+
