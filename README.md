@@ -5,3 +5,6 @@ Key features: taco place generator from (1) location in certain mile radius, (2)
 
 ![LetsTalkTacos](https://user-images.githubusercontent.com/120153538/214683601-231f275c-fc0d-4737-b04b-40cf91a3df9b.jpg)
 
+
+IP address: http://18.222.239.166/
+ssh -i "cassidy-keypair.pem" ubuntu@ec2-18-222-239-166.us-east-2.compute.amazonaws.com
