@@ -10,3 +10,9 @@ IP address: http://18.222.239.166/
 ssh -i "cassidy-keypair.pem" ubuntu@ec2-18-222-239-166.us-east-2.compute.amazonaws.com
 
 http://provotaconator.com/
+
+From HTML/simon assignments this week:
+I learned more about svg! To use a qudratic formula to shape the 4 parts of the simon game.
+Use span to make certain elements more stylable in the future
+Honestly it was super useful to test my knowledge, to see the website and build it myself! It showed what I know and what I need to learn more about (ie. svg)
+I feel more confident with buttons, tables, and input boxes now too!
