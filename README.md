@@ -26,4 +26,6 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0
 Bootstrap icons: npm i bootstrap-icons (I downloaded them on Figma)
 Google fonts (options): Manrope, Quicksand, Domine
 Color palette: https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+Font sizing: Page title	96 px, Titles	48-20 px, Text	16 px, Secondary text	14 px, Input	16 px
+Paragraph length: max-width 35em
 
