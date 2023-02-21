@@ -16,3 +16,16 @@ I learned more about svg! To use a qudratic formula to shape the 4 parts of the 
 Use span to make certain elements more stylable in the future
 Honestly it was super useful to test my knowledge, to see the website and build it myself! It showed what I know and what I need to learn more about (ie. svg)
 I feel more confident with buttons, tables, and input boxes now too!
+
+From CSS assignments this week:
+flex has three values: grow, shrink, basis. So you can override the default (0, 1, auto) and write your own numbers. Think of it as flex: [max] [min] [ideal size];
+<sup> means superscript, &reg = keyboard shortcut for circle R
+flex: 1 calc(100vh - 110px); calculates height, 100% of viewport's height minus 110 pixels
+flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0
+
+Bootstrap icons: npm i bootstrap-icons (I downloaded them on Figma)
+Google fonts (options): Manrope, Quicksand, Domine
+Color palette: https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+Font sizing: Page title	96 px, Titles	48-20 px, Text	16 px, Secondary text	14 px, Input	16 px
+Paragraph length: max-width 35em
+
