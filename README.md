@@ -22,3 +22,8 @@ flex has three values: grow, shrink, basis. So you can override the default (0, 
 <sup> means superscript, &reg = keyboard shortcut for circle R
 flex: 1 calc(100vh - 110px); calculates height, 100% of viewport's height minus 110 pixels
 flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0
+
+Bootstrap icons: npm i bootstrap-icons (I downloaded them on Figma)
+Google fonts (options): Manrope, Quicksand, Domine
+Color palette: https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+
