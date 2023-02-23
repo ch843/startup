@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Provo Taconator</title>
-    <link rel="icon" href="taco-logo.png" />
+    <link rel="icon" href="logo-favicon.png" />
 
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
@@ -20,54 +20,128 @@
     <!-- if i want an icon: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
 </head>
 <body>
-    <header>
-        <span class="logo">Provo Taconator</span>
-        <nav>    
-            <menu>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="generator.html">Generator</a>
-                </li>
-                <li>
-                  <a href="rankings.html">Rankings</a>
-                </li>
-                <li>
-                  <a href="favorites.html">My Favorites</a>
-                </li>
+    <header class="text-center text-lg-start text-muted">
+        <nav class="container-fluid"> 
+            <div class="col-12 col-md-auto mb-md-0">
+                <img src="Provo Taconator-logos/Provo Taconator-logos.jpeg"> 
+            </div> 
+
+            <menu class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
+                <li><a href="generator.html" class="nav-link px-2 link-dark">Generator</a></li>
+                <li><a href="rankings.html" class="nav-link px-2 link-dark">Rankings</a></li>
+                <li><a href="favorites.html" class="nav-link px-2 link-dark">My Favorites</a></li>
             </menu>
-    
-            <a href="log-in.html" class="btn btn-primary">Log in</a>
+
+            <div class="col-md-3 ms-auto">
+                <button type="button" class="btn btn-outline-dark col-3 me-2" href="log-in.html">Login</button>
+            </div>
         </nav>
     </header>
+
     <main>
-        <div class="banner">
-            <h1>Let's Talk Tacos</h1>
-            <h5>Let us plan your next taco date!</h5>
-            <a href="generator.html" class="btn btn-primary">Go!</a>
-            <!-- put a banner image here -->
+        <!-- banner image with title -->
+        <div id="banner-img" class="bg-image shadow-2-strong">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 100%;">
+                <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                  <div class="text-white">
+                    <h1 class="mb-3">Let's Talk Tacos</h1>
+                    <h5 class="mb-4">Let us plan your next taco date!</h5>
+                    <a class="btn btn-outline-light btn-lg m-2 justify-content-center" href="generator.html" role="button"
+                      rel="nofollow" target="_blank">Start</a>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="image-boxes">
-            <div class="box-1">
-                <!-- image&caption in bootstrap -->
-                <!-- if i want an icon: <i class="bi bi-star"></i> -->
-                <span class="caption">My Favorites</span>
+
+        <!-- three image boxes here to take you to other pages of the website -->
+        <div id="card-boxes" class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="map-img.jpg" class="card-img-top" alt="Pin location of a saved place">
+                <div class="card-body">
+                  <a href="favorites.html" class="btn btn-lg btn-outline-dark d-grid col-6 mx-auto">My Favorites</a>
+                </div>
+              </div>
             </div>
-            <div class="box-2">
-                <!-- image&caption in bootstrap -->
-                
-                <span class="caption">My Rankings</span>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacos-funsign.jpg" class="card-img-top" alt="Tacos wall sign">
+                <div class="card-body">
+                    <a href="rankings.html" class="btn btn-lg btn-outline-dark d-grid col-6 mx-auto">My Rankings</a>
+                </div>
+              </div>
             </div>
-            <div class="box-3">
-                <!-- image&caption in bootstrap -->
-                
-                <span class="caption">Global Rankings</span>
+            <div class="col">
+              <div class="card h-100">
+                <img src="global-ranking.jpg" class="card-img-top" alt="Podium for ranking">
+                <div class="card-body">
+                    <a href="favorites.html" class="btn btn-lg btn-outline-dark d-grid col-6 mx-auto">My Favorites</a>
+                </div>
+              </div>
             </div>
         </div>
     </main>
-    <footer>
-        <span class="logo">Provo Taconator</span>
-    </footer>
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">  
+    <!-- Section: Links  -->
+    <section class="footer-links">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Provo Taconator
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
 </body>
 </html>

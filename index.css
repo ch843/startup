@@ -1,0 +1,33 @@
+#banner-img {
+    background-image: url(tacos-banner2.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#card-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #DEAB51;
+}
+
+.footer-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header img {
+    margin-left: 0px;
+    height: 25%;
+    width: 25%;
+    vertical-align: middle;
+}
+
+header {
+    background-color: #DEAB51;
+    height: 250px;
+}
