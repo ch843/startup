@@ -30,6 +30,9 @@ Font sizing: Page title	96 px, Titles	48-20 px, Text	16 px, Secondary text	14 px
 Paragraph length: max-width 35em
 
 color: #DEAB51
+  
+![image](https://user-images.githubusercontent.com/120153538/221058609-c30ad3ca-b42f-484d-97ee-9f31000f90e9.png)
+
 
 
 
