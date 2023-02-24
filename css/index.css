@@ -26,10 +26,7 @@ body {
 }
 
 header img {
-    margin-left: 0px;
-    height: 25%;
-    width: 25%;
-    vertical-align: middle;
+    height: 15rem;
 }
 
 header {
@@ -40,10 +37,14 @@ p {
     max-width: 35em;
 }
 
+.gravity {
+    display: flex;
+    align-items: center;
+}
+
 footer img {
     margin-left: 0px;
-    height: 25%;
-    width: 25%;
+    height: 15rem;
 }
 
 h1 {
@@ -81,4 +82,10 @@ main {
   
   .fas.fa-share-alt:hover {
     color: #0d47a1 !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    footer img {
+        height: 10rem;
+    }
   }

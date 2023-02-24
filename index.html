@@ -20,12 +20,12 @@
 </head>
 <body>
     <header class="text-center text-lg-start text-muted">
-        <nav class="container-fluid"> 
-            <div class="col-12 col-md-auto mb-md-0">
+        <nav class="container-fluid d-flex "> 
+            <div class="col-12 col-md-auto mb-md-0 flex-fill">
                 <img src="./media/Provo Taconator-logos.jpeg"> 
             </div> 
-            <div>
-                <menu class="nav col-12 col-md-auto mb-md-0">
+            <div class="gravity">
+                <menu class="nav col-12 col-md-auto mb-md-0 flex-fill">
                     <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
                     <li><a href="./html/generator.html" class="nav-link px-2 link-dark">Generator</a></li>
                     <li><a href="./html/rankings.html" class="nav-link px-2 link-dark">Rankings</a></li>
@@ -52,16 +52,42 @@
         </div>
 
         <!-- how it works (step by step) -->
-        <!-- scroll images and steps -->
-        <div>
-          <p>Here's how it works:</p>
-          <ol class="list-group-numbered">
-              <li class="list-group-item">Type in your zipcode</li>
-              <li class="list-group-item">Select the date and time you would like to go</li>
-              <li class="list-group-item">Click "Go!"</li>
-              <li class="list-group-item">Voila! A random taco shop by you will appear</li>
-          </ol>
-      </div>
+        <section class="vh-100">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col col-lg-9 col-xl-7">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 15px;">
+                  <div class="card-body p-5">
+        
+                    <div class="text-center mb-4 pb-2">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+                        alt="Bulb" width="100">
+                    </div>
+        
+                    <figure class="text-center mb-0">
+                      <blockquote class="blockquote">
+                        <p class="pb-3">
+                          <i class="fas fa-quote-left fa-xs text-primary"></i>
+                          <div>
+                            <p>Here's how it works:</p>
+                            <ol class="list-group-numbered">
+                                <li class="list-group-item">Type in your zipcode</li>
+                                <li class="list-group-item">Select the date and time you would like to go</li>
+                                <li class="list-group-item">Click "Go!"</li>
+                                <li class="list-group-item">Voila! A random taco shop by you will appear</li>
+                            </ol>
+                          </div>
+                          <i class="fas fa-quote-right fa-xs text-primary"></i>
+                        </p>
+                      </blockquote>
+                    </figure>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- three image boxes here to take you to other pages of the website -->
         <div id="card-boxes" class="row row-cols-1 row-cols-md-3 g-4">
@@ -93,43 +119,42 @@
     </main>
 
     <!-- Footer -->
-<footer class="text-center text-lg-start text-dark">  
-    <!-- Section: Links  -->
-    <section class="footer-links">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <div class="col-md-auto mb-md-0">
-            <img src="./media/Provo Taconator-logos_transparent.png"> 
-        </div> 
-          <!-- Grid column -->
+    <footer class="bg-white text-center text-lg-start text-black">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
   
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
-            </h6>
-            <p>
-              <a href="./html/generator.html" class="text-reset">Taco Shop Generator</a>
-            </p>
-            <p>
-              <a href="./html/favorites.html" class="text-reset">My Favorites</a>
-            </p>
-            <p>
-              <a href="./html/rankings.html" class="text-reset">My Rankings</a>
-            </p>
-            <!-- go directly to this section on Rankings page -->
-            <p>
-              <a href="./html/rankings.html" class="text-reset">Local Rankings</a>
-            </p>
+            <div>
+              <img src="media/Provo Taconator-logos_transparent.png" alt="logo"
+                   loading="lazy" />
+            </div>
           </div>
-          <!-- Grid column -->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ms-auto pt-4">
+            <h5 class="text-uppercase mb-4">LINKS</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="html/generator.html" style="color: #000000; text-decoration: none;">Random Generator</a>
+              </li>
+              <li>
+                <a href="html/favorites.html" style="color: #000000; text-decoration: none;">My Favorites</a>
+              </li>
+              <li>
+                <a href="html/rankings.html" style="color: #000000; text-decoration: none;">My Rankings</a>
+              </li>
+              <li>
+                <a href="html/rankings.html" style="color: #000000; text-decoration: none;">Local Rankings</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
         </div>
-        <!-- Grid row -->
       </div>
-    </section>
-    <!-- Section: Links  -->
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
