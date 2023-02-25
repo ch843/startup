@@ -10,7 +10,7 @@ body {
 
 #banner-img {
     background-image: url(../media/tacos-banner2.jpg);
-    height: 100vh;
+    height: 80vh;
     background-size: 100% 100%;
 }
 
@@ -26,12 +26,12 @@ body {
 }
 
 header img {
-    height: 15rem;
+    height: 9rem;
 }
 
 header {
     background-color: #DEAB51;
-    height: 15rem;
+    height: 10rem;
 }
 
 p {
