@@ -37,6 +37,14 @@ color: #DEAB51
   
 ![image](https://user-images.githubusercontent.com/120153538/221058609-c30ad3ca-b42f-484d-97ee-9f31000f90e9.png)
 
-
-
+JavaScript DOM Notes
+  (1) getElementbyID (or by class or tag name)
+  (2) Can turn HTML collections into arrays with Array.from(variable storing the class or tag)- then can use the forEach func with array
+  (3) document.querySelector - only can select one element
+  (4) querySelectorAll - grabs every element in parameter (can do several elements), returns in collection form
+  (5) text editor- append to a string is +=
+  (6) .innerHTML you can replace it all or append with += '<h2></h2> for example
+  (7) .cloneNode(true) - duplicates node for later use
+  (8) querySelector attached to a DOM traverse function searches only in that scope
+  (9) .addEventListener(any event- W3 schools, call back function- what happens when event happens) OR "onclick" directly into html
 
