@@ -43,8 +43,13 @@ JavaScript DOM Notes
   (3) document.querySelector - only can select one element
   (4) querySelectorAll - grabs every element in parameter (can do several elements), returns in collection form
   (5) text editor- append to a string is +=
-  (6) .innerHTML you can replace it all or append with += '<h2></h2> for example
+  (6) .innerHTML you can replace it all or append with += '<h tag for example
   (7) .cloneNode(true) - duplicates node for later use
   (8) querySelector attached to a DOM traverse function searches only in that scope
   (9) .addEventListener(any event- W3 schools, call back function- what happens when event happens) OR "onclick" directly into html
-
+  
+JavaScript Promise notes
+(1)Promise object: new Promise((resolve, reject) => {}
+(2)2 options: resolve or reject
+(3) 2 outcomes = fulfilled or rejected
+(4) then = when fulfilled, catch = when rejected, finally = always called
