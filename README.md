@@ -53,3 +53,6 @@ JavaScript Promise notes
 (2)2 options: resolve or reject
 (3) 2 outcomes = fulfilled or rejected
 (4) then = when fulfilled, catch = when rejected, finally = always called
+  
+JavaScript Async/Await notes
+(this all goes in a function) (1) async always returns a promise!! (2) fetch = 'api'(3) put "await" in front of fetch, and basically it stalls js until the promise of fetch is resolved (4) assign the value of the response to a variable (5)then do await and a .json function to get response [.json also returns a promise] (6) use .then when returning a async function (7) non-blocking, meaning it allows JS to continue on with the code without stopping the program (7) with .catch, err is an error object. so you can use the .message method to display the error message (9)
