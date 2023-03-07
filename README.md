@@ -131,6 +131,21 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   
 <hr />
 <h1>JavaScript</h1>
+  <b>Function syntax</b>
+  function syntax options:<br/>
+  function f(x) {}<br/>
+  const f = function(){}<br/>
+  arrow function syntax<br/>
+  
+  <b>Array functions</b><br/>
+  
+  <b>Arrow functions</b><br/>
+  () => logic<br/>
+  anonymous(parameters) brackets logic<br/>
+  can put brackets around logic, if going to be one line<br/>
+  
+  <b>Regular expressions (letters)</b>
+  
 <b>DOM Notes</b><br/>
   (1) getElementbyID (or by class or tag name)<br/>
   (2) Can turn HTML collections into arrays with Array.from(variable storing the class or tag)- then can use the forEach func with array<br/>
@@ -141,12 +156,19 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   (7) .cloneNode(true) - duplicates node for later use<br/>
   (8) querySelector attached to a DOM traverse function searches only in that scope<br/>
   (9) .addEventListener(any event- W3 schools, call back function- what happens when event happens) OR "onclick" directly into html<br/>
+  Things to note (1) (querySelector (so it would be the first element it finds of whatever you specify) and querySelectorAll)<br/>
+  (2) textContent sets the child text for an element<br/>
   
 <b>Promise notes</b><br/>
 (1)Promise object: new Promise((resolve, reject) => {}<br/>
 (2)2 options: resolve or reject<br/>
 (3) 2 outcomes = fulfilled or rejected<br/>
 (4) then = when fulfilled, catch = when rejected, finally = always called<br/>
+(5) From review:<br/>
+  10000 = 10 seconds<br/>
+  try and catch<br/>
+  then, error, finally<br/>
+  await blocks execution until it happens (await func())<br/>
   
 <b>Async/Await notes</b>
 (this all goes in a function)<br/>
@@ -156,4 +178,16 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
 (5)then do await and a .json function to get response [.json also returns a promise]<br/>
 (6) use .then when returning a async function <br/>
 (7) non-blocking, meaning it allows JS to continue on with the code without stopping the program <br/>
-(8) with .catch, err is an error object. so you can use the .message method to display the error message
+(8) with .catch, err is an error object. so you can use the .message method to display the error message<br/>
+  
+<hr/>
+  <h1>JSON</h1>
+  notation- “key value” and index (has to have key value in double quotes and data)<br/>
+  ex. {“x”:3}<br/>
+  
+ <hr/>
+  <h1>Command line</h1>
+  chmod +x deploy.sh (making executable)<br/>
+  sudo deploy.sh<br/>
+  ls -la (-la lists details)<br/>
+  ssh deploy.sh (ssh-ing into server)<br/>
