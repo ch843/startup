@@ -32,11 +32,13 @@ I feel more confident with buttons, tables, and input boxes now too!
 
 <hr />
 
-<b>CSS</b>
-flex has three values: grow, shrink, basis. So you can override the default (0, 1, auto) and write your own numbers. Think of it as flex: [max] [min] [ideal size];
-<sup> means superscript, &reg = keyboard shortcut for circle R
-flex: 1 calc(100vh - 110px); calculates height, 100% of viewport's height minus 110 pixels
-flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0
+<h1>CSS</h1>
+
+<b>Flex</b><br/>
+Three values: grow, shrink, basis. So you can override the default (0, 1, auto) and write your own numbers. Think of it as flex: [max] [min] [ideal size];<br />
+<sup> means superscript, &reg = keyboard shortcut for circle R<br/>
+flex: 1 calc(100vh - 110px); calculates height, 100% of viewport's height minus 110 pixels<br/>
+flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   
 <hr />
 
