@@ -7,20 +7,18 @@ async function getTacoShop() {
       fetch("https://nksou7u3c4.execute-api.us-east-2.amazonaws.com/default/taco_selector", requestOptions)
         .then(response => response.text())
         .then(result => {
-            console.log(result)
-            return result
+            console.log(getShopInfo(result))
         })
         
         .catch(error => console.log('error', error));
 }
 
-async function getShopInfo() {
+async function getShopInfo(result) {
     var requestOptions = {
         method: 'GET',
         redirect: 'follow'
       };
-      let tacoShop = await getTacoShop()
-      fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?key=${}&query=${'Taco Nation'}`, requestOptions)
+      fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?key=${}&query=${result}`, requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
