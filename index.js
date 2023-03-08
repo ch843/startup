@@ -1,5 +1,6 @@
 require('dotenv').config()
 
+// get random taco shop name
 async function getTacoShop() {
     var requestOptions = {
         method: 'GET',
@@ -17,16 +18,39 @@ async function getTacoShop() {
 }
 
 // delete this function and use functions from Places API
+// async function getShopInfo(result) {
+//     var requestOptions = {
+//         method: 'GET',
+//         redirect: 'follow',
+//         // headers: {
+//         //   'Access-Control-Allow-Origin': 
+//         // }
+//       };
+//         fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=${process.env.API_KEY}&query=${result}`, requestOptions)
+//         .then(response => response.text())
+//         .then(result => result)
+//         .catch(error => console.log('error', error));
+// }
+
 async function getShopInfo(result) {
-    var requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-        // headers: {
-        //   'Access-Control-Allow-Origin': 
-        // }
-      };
-        fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=${}&query=${result}`, requestOptions)
-        .then(response => response.text())
-        .then(result => result)
-        .catch(error => console.log('error', error));
+  // get place name and id
+
+  // get place photos (see website)
+
+  // get place details
+  let request = {
+    query: result,
+    fields: ['name', 'formatted_address', 'opening_hours'],
+  };
+
+  var service = new google.maps.places.PlacesService(map);
+
+  service = new google.maps.places.PlacesService(map);
+  service.getDetails(request, callback);
+
+  function callback(place, status) {
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+      createMarker(place);
+    }
+}
 }
