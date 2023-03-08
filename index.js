@@ -25,7 +25,7 @@ async function getShopInfo(result) {
         //   'Access-Control-Allow-Origin': 
         // }
       };
-        fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyA6FcFpZL3u2GZeQ1o9dTw4rKpAewq7AQA&query=${result}`, requestOptions)
+        fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?key=${}&query=${result}`, requestOptions)
         .then(response => response.text())
         .then(result => result)
         .catch(error => console.log('error', error));
