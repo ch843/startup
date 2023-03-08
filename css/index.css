@@ -70,6 +70,14 @@ main {
   .search-hover:hover {
     width: 300px;
     padding-left: 50px;
+    background-color: #FFD180;
+    border: 1px solid #FFD180;
+  }
+
+  #go-btn:hover {
+    background-color: #FFD180;
+    border: 1px solid #FFD180;
+    color: white;
   }
 
   .title {
