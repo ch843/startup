@@ -1,22 +1,20 @@
-const json = require("results.json")
-
 // --------- api call ------------
 
 // get random taco shop name
-// async function getTacoShop() {
-//     var requestOptions = {
-//         method: 'GET',
-//         redirect: 'follow'
-//       };
+async function getTacoShop() {
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
       
-//       await fetch("https://nksou7u3c4.execute-api.us-east-2.amazonaws.com/default/taco_selector", requestOptions)
-//         .then(response => response.text())
-//         .then(result => {
-//             console.log(result)
-//         })
+      await fetch("https://nksou7u3c4.execute-api.us-east-2.amazonaws.com/default/taco_selector", requestOptions)
+        .then(response => response.text())
+        .then(result => {
+            console.log(result)
+        })
         
-//         .catch(error => console.log('error', error));
-// }
+        .catch(error => console.log('error', error));
+}
 
 // // async function getShopInfo(result) {
 // //   var requestOptions = {
@@ -73,16 +71,19 @@ const json = require("results.json")
 // create object as if api call worked and display taco shop info
 
 function displayTacoShop() {
-    getTacoShop()
+  fetch('example.json')
+    .then(response => response.json())
+    .then(data => {
+      let randNum = Math.floor(Math.random() * 9) + 1;
+
+      document.getElementById("shop-result").innerHTML = data.results[randNum].name;
+
+      console.log("^^^^^^^ ", data.results[randNum].name)
+  
+      document.getElementById("taco-image").src = data.results[randNum].
+    })
+    .catch(error => console.error(error));
 }
-
-document.getElementById("shop-result").innerHTML = response.results[0].name;
-
- console.log("^^^^^^^ ", response.results[0].name)
-
-document.getElementById("taco-image").src = response.results[0].photos[0].html_attributions[0];
-
-document.getElementById("taco-image").src = response.results[0].photos[0].html_attributions[0];
 
 // do this for each element on the page
 
