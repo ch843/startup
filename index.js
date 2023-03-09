@@ -71,18 +71,15 @@ async function getTacoShop() {
 // create object as if api call worked and display taco shop info
 
 function displayTacoShop() {
-  fetch('example.json')
+  fetch('results.json')
     .then(response => response.json())
     .then(data => {
       let randNum = Math.floor(Math.random() * 9) + 1;
 
       document.getElementById("shop-result").innerHTML = data.results[randNum].name;
-
-      console.log("^^^^^^^ ", data.results[randNum].name)
-  
-      document.getElementById("taco-image").src = data.results[randNum].
-    })
-    .catch(error => console.error(error));
+ 
+      document.getElementById("shop-address").src = data.results[randNum].formatted_address;
+    }).catch(error => console.error(error));
 }
 
 // do this for each element on the page
