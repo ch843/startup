@@ -57,7 +57,7 @@
         </div>
 
         <div>
-          <button id="go-btn" class="btn btn-outline-dark me-3" type="submit" onclick="getTacoShop()">Go</button>
+          <button id="go-btn" class="btn btn-outline-dark me-3" type="submit" onclick="displayTacoShop()">Go</button>
         </div>
       </menu>
 
@@ -67,11 +67,11 @@
           <div class="card shadow p-3 mb-5 bg-white rounded">
             <div class="card-body d-flex flex-row">
               <div>
-                <h5 class="card-title font-weight-bold mb-2">Your result: <span id="result">[Taco Shop Name]</span></h5>
+                <h5 class="card-title font-weight-bold mb-2">Your result: <span id="shop-result">[Taco Shop Name]</span></h5>
               </div>
             </div>
             <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
-              <img class="img-fluid" src="../media/tacoshop-9.png"
+              <img id = "taco-image" class="img-fluid" src="../media/tacoshop-9.png"
                 alt="Card image cap" />
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
