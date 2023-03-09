@@ -1,12 +1,17 @@
+function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
 
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
+}
 
-signUpButton.addEventListener('click', () => {
-  container.classList.add("right-panel-active");
-});
+function login() {
+const nameEl = document.querySelector("#username");
+localStorage.setItem("userName", nameEl.value);
 
-signInButton.addEventListener('click', () => {
-  container.classList.remove("right-panel-active");
-});
+var loginBtn = document.getElementById("log-in-btn");
+if (username) {
+  loginBtn.innerHTML = "Welcome, " + username;
+}
+}

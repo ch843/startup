@@ -1,3 +1,5 @@
+// --------- api call ------------
+
 // get random taco shop name
 async function getTacoShop() {
     var requestOptions = {
@@ -63,6 +65,8 @@ function getShopInfo(result) {
     }
   }
 }
+
+// --------- using the data to do what i want ------------
 
 // create object as if api call worked and display taco shop info
 const response = {
