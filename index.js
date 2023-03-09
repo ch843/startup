@@ -2,7 +2,7 @@ const json = require("results.json")
 
 // --------- api call ------------
 
-// // get random taco shop name
+// get random taco shop name
 // async function getTacoShop() {
 //     var requestOptions = {
 //         method: 'GET',
