@@ -20,6 +20,7 @@ color: #DEAB51<br/>
 
 <h1>DNS</h1>
 point DNS record to another DNS → CNAME<br/>
+CNAME =  create an alias from one domain name to another <br/>
 (also know what A is → points to an IP address)<br/>
 subdomain = whole link (ex: cs260.cs.byu.edu) but byu.edu = domain<br/>
 
@@ -126,7 +127,7 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   align content: (Aligns a flex container's lines within the flex container when there is extra space on the cross-axis.) flex-start flex-end center space-between space-around space-evenly stretch (default)<br/>
   order:(order of items) <integer> (... -1, 0 (default), 1, ...)<br/>
   
-  <b>Remember</b>content → Pals Before Marriage (padding, border, margin)<br/>
+  <b>Remember</b> content → Pals Before Marriage (padding, border, margin)<br/>
   @import through Google Fonts<br/>
   
 <hr />
@@ -138,13 +139,75 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   arrow function syntax<br/>
   
   <b>Array functions</b><br/>
+  push	Add an item to the end of the array	a.push(4)<br/>
+  pop	Remove an item from the end of the array	x = a.pop<br/>
+  slice	Return a sub-array	a.slice(1,-1)<br/>
+  sort	Run a function sort an array in place	a.sort((a,b) => b-a)<br/>
+  values	Creates an iterator for use with a for of loop	for (i of a.values()) {...}<br/>
+  find	Find the first item satisfied by a test function	a.find(i => i < 2)<br/>
+  forEach	Run a function on each array item	a.forEach(console.log)<br/>
+  reduce	Run a function to reduce each array item to a single item	a.reduce((a, c) => a + c)<br/>
+  map	Run a function to map an array to a new array	a.map(i => i+i)<br/>
+  filter	Run a function to remove items	a.filter(i => i%2)<br/>
+  every	Run a function to test if all items match	a.every(i => i < 3)<br/>
+  some	Run a function to test if any items match	a.some(i => 1 < 1)<br/>
+  
+  <b>Objects and Classes Syntax</b><br/>
+  Class/Inheritance: class Employee extends Person {}<br/>
+  Constructor: constructor(name, position) {}<br/>
+  Create object: new Employee()<br/>
+  this = self in python<br/>
+  
   
   <b>Arrow functions</b><br/>
   () => logic<br/>
   anonymous(parameters) brackets logic<br/>
   can put brackets around logic, if going to be one line<br/>
   
-  <b>Regular expressions (letters)</b>
+  <b>Regular expressions (letters)</b><br/>
+  RegExp methods:<br/>
+  exec()	Executes a search for a match in a string. It returns an array of information or null on a mismatch.<br/>
+  test()	Tests for a match in a string. It returns true or false.<br/>
+  match()	Returns an array containing all of the matches, including capturing groups, or null if no match is found.<br/>
+  matchAll()	Returns an iterator containing all of the matches, including capturing groups.<br/>
+  search()	Tests for a match in a string. It returns the index of the match, or -1 if the search fails.<br/>
+  replace()	Executes a search for a match in a string, and replaces the matched substring with a replacement substring.<br/>
+  replaceAll()	Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.<br/>
+  split()	Uses a regular expression or a fixed string to break a string into an array of substrings.<br/>
+  Character classes:<br/>
+  .	Any character except newline<br/>
+  a	The character a<br/>
+  ab	The string ab<br/>
+  a|b	a or b<br/>
+  a*	0 or more a's<br/>
+  \	Escapes a special character<br/>
+  "*"	0 or more<br/>
+  "+"	1 or more<br/>
+  ?	0 or 1<br/>
+  {2}	Exactly 2<br/>
+  {2, 5}	Between 2 and 5<br/>
+  {2,}	2 or more<br/>
+  [ab-d]	One character of: a, b, c, d<br/>
+  [^ab-d]	One character except: a, b, c, d<br/>
+  [\b]	Backspace character<br/>
+  \d	One digit<br/>
+  \D	One non-digit<br/>
+  \s	One whitespace<br/>
+  \S	One non-whitespace<br/>
+  \w	One word character<br/>
+  \W	One non-word character<br/>
+  ^	Start of string<br/>
+  $	End of string<br/>
+  \b	Word boundary<br/>
+  \B	Non-word boundary<br/>
+  (?=...)	Positive lookahead<br/>
+  (?!...)	Negative lookahead<br/>
+  | means or<br/>
+  
+  <b>JSON</b><br/>
+  notation- “key value” and index (has to have key value in double quotes and data)<br/>
+  ex. {“x”:3}<br/>
+   convert JSON to, and from, JavaScript using the JSON.parse and JSON.stringify<br/>
   
 <b>DOM Notes</b><br/>
   (1) getElementbyID (or by class or tag name)<br/>
@@ -179,11 +242,6 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
 (6) use .then when returning a async function <br/>
 (7) non-blocking, meaning it allows JS to continue on with the code without stopping the program <br/>
 (8) with .catch, err is an error object. so you can use the .message method to display the error message<br/>
-  
-<hr/>
-  <h1>JSON</h1>
-  notation- “key value” and index (has to have key value in double quotes and data)<br/>
-  ex. {“x”:3}<br/>
   
  <hr/>
   <h1>Command line</h1>
