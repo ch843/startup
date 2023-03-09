@@ -36,12 +36,11 @@
 
     <main>
       <div class="title">
-        <h1 class="mb-3 display-1 text-center">Random Taco Shop Generator</h1>
-        <h3 class="mb-4 text-center">Search:</h3>
+        <h1 class="mb-3 display-1 text-center">Welcome, <span class="user-name">Guest</span></h1>
       </div>
         
       <menu class="nav col-12 col-md-auto me-10 mb-md-0 d-flex justify-content-center align-items-center">
-        <div>
+        <!-- <div>
           <label for="text">Location: </label>
           <input type="text" class="search-hover me-3" name="" placeholder="zip code" />
         </div>
@@ -54,12 +53,15 @@
         <div>
           <label for="text">Time: </label>
           <input type="text" class="search-hover me-3" name="" placeholder="--:--" />
-        </div>
+        </div> -->
 
         <div>
-          <button id="go-btn" class="btn btn-outline-dark me-3" type="submit" onclick="displayTacoShop()">Go</button>
+          <button id="go-btn" class="btn btn-outline-dark me-3 btn-lg px-10 py-3" type="submit" onclick="displayTacoShop()">Generate Random Taco Shop</button>
         </div>
       </menu>
+
+      <!-- javascript map response display -->
+      <div id="map"></div>
 
       <!-- generator display box -->
       <div class="container">
