@@ -545,7 +545,7 @@ const data = {
 
 function displayTacoShop() {
   // fill generator card
-    let randNum = Math.floor(Math.random() * data.results.length);
+    let randNum = Math.floor(Math.random() * (data.results.length + 1));
 
     document.getElementById("shop-result").innerHTML = data.results[randNum].name;
  
@@ -564,21 +564,24 @@ function displayTacoShop() {
 function fillNearbyShops() {
   let newArray = Array.from(data.results)
 
-  for (let i = 0; i < data.results.length - 1; i++) {
+  for (let i = 1; i < data.results.length; i++) {
 
     randNum= Math.floor(Math.random() * newArray.length);
+    console.log("random num", randNum)
+    console.log("og length", newArray.length + 1)
 
-    document.getElementById(`shop-${i+1}`).innerHTML = newArray[randNum].name;
+    document.getElementById(`shop-${i}`).innerHTML = newArray[randNum].name;
   
-    document.getElementById(`address-${i+1}`).innerHTML= newArray[randNum].formatted_address;
+    document.getElementById(`address-${i}`).innerHTML= newArray[randNum].formatted_address;
 
     if (randNum === 0) {
-      document.getElementById("result-image").src =  `../media/tacoshop-${randNum+1}.png`
+      document.getElementById(`taco-image${i}`).src = `../media/tacoshop-${randNum+1}.png`
     }
     else {
-      document.getElementById("result-image").src =  `../media/tacoshop-${randNum}.png`
+      document.getElementById(`taco-image${i}`).src = `../media/tacoshop-${randNum}.png`
     }
     newArray.splice(randNum, 1);
+    console.log("new length", newArray.length)
   }
 }
 
