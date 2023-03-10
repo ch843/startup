@@ -1,3 +1,6 @@
 cassidy-keypair.pem
 .env
 node_modules/
+package-lock.json
+package.json
+webpack.config.js
