@@ -249,3 +249,8 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   sudo deploy.sh<br/>
   ls -la (-la lists details)<br/>
   ssh deploy.sh (ssh-ing into server)<br/>
+  
+  <hr/>
+  <h1> URL, Ports, HTTPS, SOP and CORS, Fetch<h1><br>
+    ![image](https://user-images.githubusercontent.com/120153538/224814956-20186a40-bc8c-4b4b-b59c-89ca793139fe.png)
+
