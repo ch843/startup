@@ -251,6 +251,17 @@ flex: 1; = flex-grow 1, flex-shrink 1, flex-basis 0<br/>
   ssh deploy.sh (ssh-ing into server)<br/>
   
   <hr/>
-  <h1> URL, Ports, HTTPS, SOP and CORS, Fetch<h1><br>
-    ![image](https://user-images.githubusercontent.com/120153538/224814956-20186a40-bc8c-4b4b-b59c-89ca793139fe.png)
+  <h1> URL, Ports, HTTPS, SOP and CORS, Fetch</h1><br>
+    url<br>
+    < scheme > :// < domain name > : < port > / < path > ? < parameters > # < anchor > <br>
+      The default port is 80 if the scheme is HTTP, or 443 if the scheme is HTTPS.<br>
+      The parameters represent a list of key value pairs<br>
+      Anchor = sub-location in the resource.<br>
+      ![webServicesPorts](https://user-images.githubusercontent.com/120153538/224816365-a42398d1-3d8b-4be5-848c-f9d9cb0177c8.jpg)<br>
+      SOP = only allows JavaScript to make requests to a domain if it is the same domain that the user is currently viewing<br>
+      CORS = allows the client (e.g. browser) to specify the origin of a request and then let the server respond with what origins are allowed<br>
+      Access-Control-Allow-Origin header<br>
+      value of * meaning that any origin can make requests to this service.<br>
+      or specifying specific domains<br>
+
 
